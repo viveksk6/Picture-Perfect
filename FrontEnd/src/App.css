@@ -1,0 +1,100 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.a {
+  font-size: 1vw;
+}
+
+.b {
+  width: 5px;
+}
+
+.certificate {
+  position: absolute;
+  top: 39vh;
+  left: 25vw;
+  color: #ffffff;
+  font-family: Arial;
+}
+
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 100vh;
+
+  flex-direction: column;
+  align-items: left;
+
+  color: white;
+}
+
+.bg-image {
+  height: 45vh;
+  width: 100vw;
+}
+
+.movie-image {
+  height: 50vh;
+  width: 20vw;
+  position: absolute;
+  top: 20vh;
+  left: 3vw;
+}
+
+.movie-name {
+  position: absolute;
+  top: 32vh;
+  left: 25vw;
+  color: #ffffff;
+}
+
+.movie {
+  height: 50vh;
+}
+
+.left-top {
+  margin-left: 10vw;
+  margin-top: 13vh;
+
+  position: relative;
+}
+
+.left-top0 {
+  margin-left: 0vw;
+  margin-top: 0vh;
+
+  position: relative;
+}
+
+.left-top2 {
+  margin-left: 10vw;
+  margin-top: 3vh;
+  width: 80vw;
+  position: relative;
+}
+
+.left-top3 {
+  margin-left: 38vw;
+  margin-top: 3vh;
+  position: relative;
+}
+
+.shows-button {
+  width: 10vw;
+  position: absolute;
+  top: 50vh;
+  left: 87vw;
+}
+
+.App-link {
+  color: #09d3ac;
+}

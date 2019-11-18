@@ -1,0 +1,13 @@
+[
+  {
+    "title": "War",
+    "imgpath": "movie2.jpg",
+    "rating": "80%"
+  },
+  {
+    "title": "Bahubali 2 - The Conclusion",
+    "imgpath": "movie1.jpg",
+    "rating": "80%"
+  },
+  { "title": "Joker", "imgpath": "movie3.jpg", "rating": "80%" }
+]
