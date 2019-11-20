@@ -55,12 +55,15 @@ func queryDb()  {
 }
 
 func homePage(w http.ResponseWriter, r *http.Request){
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
 
 	fmt.Fprintf(w, "Welcome to the HomePage!")
 	fmt.Println("Endpoint Hit: homePage")
 }
 
 func returnAllArticles(w http.ResponseWriter, r *http.Request){
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	movieDetails = nil
 	queryValues := r.URL.Query()
 	pageSize = queryValues.Get("pageSize")
