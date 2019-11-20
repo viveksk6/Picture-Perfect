@@ -84,7 +84,7 @@ func returnAllArticles(w http.ResponseWriter, r *http.Request){
 func handleRequests() {
 	myRouter := mux.NewRouter().StrictSlash(true)
 	myRouter.HandleFunc("/", homePage)
-	myRouter.HandleFunc("/all", returnAllArticles)
+	myRouter.HandleFunc("/all", returnAllArticles).Methods("GET", "OPTIONS")
 	log.Fatal(http.ListenAndServe(":10000", myRouter))
 }
 
