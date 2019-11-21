@@ -9,7 +9,6 @@ import (
 	"log"
 	"net/http"
 	"strconv"
-
 	//"github.com/davecgh/go-spew/spew"
 )
 
@@ -23,8 +22,6 @@ type MovieDetails struct {
 	Certificate string `json:"certificate"`
 }
 
-//var pageSizeInt int
-//var movieDetails = make([]MovieDetails, pageSizeInt)
 var movieDetails []MovieDetails
 var pageSize, pageNo string
 var err error
@@ -40,8 +37,6 @@ func queryDb()  {
 
 	q := "SELECT movieId, title, summary, genre, img, language, certificate from movies limit "
 	qstring := q + pageNo + "," + pageSize
-	//qstring2:= qstring + " where title like %a%"
-	//qstring2:= "SELECT movieId, title, summary, genre, img, language, certificate from movies where title like '%a%'"
 	results, err := db.Query(qstring)
 	if err != nil {
 		panic(err.Error()) // proper error handling instead of panic in your app
